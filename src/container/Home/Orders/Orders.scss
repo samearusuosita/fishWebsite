@@ -1,0 +1,104 @@
+.app__orders-main{
+    width: 100%;
+}
+
+.app__orders{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and(max-width: 1180px ){
+            width: 100%;
+            height: auto;
+            padding: 70px 0;
+    }
+    @media screen and(min-width: 1180px ){
+            padding: 20px 0;
+    }
+
+    img{
+        height: auto;
+        width: 452px;
+        max-width: 100%;
+        border-radius: 15px;
+
+        @media screen and(max-width: 650px ){
+            margin-bottom: 25px;
+
+        }
+        @media screen and(max-width: 850px ){
+            width: max-content;
+
+        }
+    }
+
+    .app__orders-text{
+        width: 550px;
+        max-width: 100%;
+        padding: 0 10px;
+
+        @media screen and(max-width: 850px ){
+            min-width: 100%;
+        }
+
+        h1{
+            color: #28a745;
+            font-size: 34px;
+            margin-bottom: 20px;
+            text-transform: capitalize;
+            font-family: var(--font-heading);
+
+         
+            @media screen and(max-width: 850px ){
+              padding-top: 80px;
+              font-size: 44px;
+            }
+
+            @media screen and(max-width: 650px ){
+                font-size: 32px;
+     
+             }
+        }
+
+        p{
+            color: black;
+            font-size: 18px;
+            line-height: 25px;
+            letter-spacing: 2px;
+            margin-bottom: 3rem;
+            font-family: var( --font-subheading);
+            font-weight: 400;
+
+            @media screen and(max-width: 850px ){
+                font-size: 20px;
+                line-height: 25px;
+                letter-spacing: 1px;
+              }
+        }
+    }
+
+    .app__order-content{
+        width: 1280px;
+        max-width: 95%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+
+    @media screen and(max-width: 850px ){
+        .reverse{
+        flex-direction: column-reverse;
+    }
+    }
+    
+    @media screen and(max-width: 650px ){
+        .reverse{
+        flex-direction: column-reverse;
+    }
+    }
+}

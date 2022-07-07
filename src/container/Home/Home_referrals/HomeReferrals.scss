@@ -1,0 +1,55 @@
+.app__homereferrals{
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+
+    @media screen and(max-width: 1180px){
+        min-height: 50vh;
+        }
+        
+        @media screen and(max-width: 450px){
+        min-height: 60vh;
+        }
+
+    .app__homeref-content{
+        color: black;
+        position: absolute;
+        right: 200px;
+        top: 50%;
+        transform: translateY(-50%, -50%);
+
+
+        @media screen and(max-width: 1180px){
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            }
+            
+            @media screen and(max-width: 450px){
+                right: 0;
+                text-align: center;
+                align-items: center;
+              
+            }
+
+        h1{
+            color: #28a745;
+            font-size: 40px;
+            text-transform: capitalize;
+            font-family: var(--font-heading);
+        }
+    
+        p{
+            margin: 10px 0 40px;
+            text-transform: capitalize;
+            font-size: 16px;
+            font-family: var(--font-subheading);
+            letter-spacing: 2px;
+            font-weight: 600;
+        }
+       
+    }
+
+    
+}

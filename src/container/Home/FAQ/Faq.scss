@@ -1,0 +1,148 @@
+.faq{
+    width: 100%;
+    margin: 20px;
+
+    @media screen and(max-width: 1180px){
+        margin: 30px;
+        height: auto;
+        }
+        
+        @media screen and(max-width: 450px){
+        margin: 30px;
+        }
+
+    
+
+    .container{
+        position: relative;
+        flex-direction: row;
+        display: flex;
+        width: 100%;
+
+
+        @media screen and(max-width: 1180px){
+        flex-direction: column;
+        }
+        
+        @media screen and(max-width: 450px){
+        flex-direction: column;
+        }
+
+    }
+
+    .p-text-p{
+        color: black;
+    }
+}
+
+
+.left, .right{
+    // height: 100vh;
+    width: 50%;
+    padding: 100px;
+    top: 50%;
+    left: 50%;
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-50%, -50%);
+    
+
+
+    @media screen and(max-width: 1180px){
+        width: 100%;
+        padding: 20px 50px 0 50px;
+        
+        
+        // .left{
+        //     padding-top: 30px;
+        // }
+        
+    }
+    @media screen and(max-width: 450px){
+        width: 100%;
+
+        .left{
+            padding-top: 30px;
+        }
+        
+        
+        
+    }
+    
+}
+.right{
+    background: white;
+
+    .accordion{
+        background-color: #eee;
+        color: #444;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        text-align: left;
+        border: none;
+        outline: none;
+        transition: all 0.4s ease-in-out;
+
+        // &:after{
+        //     content: '\02795';
+        //     font-size: 13px;
+        //     color: green;
+        //     float: right;
+        //     margin-left: 5px;
+        // }
+
+        // .active:after{
+        //     content: '\2796';
+        // }
+
+         &:hover,:active{
+        background-color: rgb(159, 248, 159);
+    }
+    }
+
+    // .panel{
+    //     padding: 0 18px;
+    //     background-color: white;
+    //     display: none;
+    //     overflow: hidden;
+
+    //     max-height: 0;
+    //     transition: max-height 0.2s ease-in-out;
+    // }
+   
+
+    
+}
+.left{
+    background: white;
+
+    .frq-head-text{
+        color: black;
+        padding-bottom: 20px;
+        
+    }
+
+    .p-text-p{
+        color: black;
+        line-height: 25px;
+
+        span{
+            color: green;
+            font-size: bold;
+            font-weight: 600;
+
+            
+        }
+
+        a{
+            text-decoration: none;
+            font-weight: 600;
+            color: green;
+        }
+    }
+    
+   
+   
+}

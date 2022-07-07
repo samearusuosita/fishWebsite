@@ -1,0 +1,42 @@
+.app__footer{
+    width: 100%;
+    // height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: green;
+
+}
+
+.app__policy-links{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+
+    li{
+        margin: 0 1rem;
+        cursor: pointer;
+    }
+
+    a{
+        color: rgb(184, 250, 204);
+        text-decoration: none;
+        text-transform: capitalize;
+        font-size: 16px;
+        font-weight: 600;
+        transition: all 0.3s ease-in-out;
+        font-family: var(--font-secondary);
+        letter-spacing: 2px;
+
+        &:hover{
+            color: var(--white);
+        }
+    }
+    
+
+}
+    
+    
