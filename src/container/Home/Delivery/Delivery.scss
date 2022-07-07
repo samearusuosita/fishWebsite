@@ -1,9 +1,15 @@
+.app__delivery-bg{
+    background-image:  url("../../../assets/fishbg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat;
+  }
+
 .app__delivery{
     width: 100%;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background: linear-gradient(green, black);
 
     .title-text{
         color: white !important;
@@ -22,6 +28,7 @@
             height: 70%;
             padding-top: 4rem;
             padding-bottom: 0;
+            margin-bottom: 0;
             
         }
     }

@@ -7,12 +7,12 @@ import './Delivery.scss'
 
 const Delivery = () => {
   return (
-    <div className='app__delivery'>
+    <div className='app__delivery app__delivery-bg'>
       <>
        <h1 className='title-text'>We Deliver Nationwide <br/>& Across the World</h1>
        <h5 className="title-text-sub">No matter how small or big your order is, we will still deliver to your house or venue</h5>
        <div className="app__delivery-img">
-        <img src={images.courier} alt="delivery" />
+        <img src={images.delivery} alt="delivery" />
        </div>
       </>
     </div>

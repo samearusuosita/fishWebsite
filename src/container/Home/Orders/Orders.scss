@@ -64,12 +64,12 @@
 
         p{
             color: black;
-            font-size: 18px;
+            font-size: 16px;
             line-height: 25px;
             letter-spacing: 2px;
             margin-bottom: 3rem;
             font-family: var( --font-subheading);
-            font-weight: 400;
+            font-weight: 600;
 
             @media screen and(max-width: 850px ){
                 font-size: 20px;
@@ -79,15 +79,7 @@
         }
     }
 
-    .app__order-content{
-        width: 1280px;
-        max-width: 95%;
-        margin: 0 auto;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: space-around;
-    }
+    
 
 
     @media screen and(max-width: 850px ){

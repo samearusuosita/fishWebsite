@@ -4,8 +4,19 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
-    background: green;
+    padding: 0.2rem 2rem;
+    // backdrop-filter: blur(4px);
+    // -webkit-backdrop-filter: blur(4px);
+    background-color:  rgb(0, 0, 0);;
+
+    
+
+    img{
+           
+        height: 30px;
+        width: auto;
+        opacity: 0.2;
+    }
 
 }
 
@@ -25,7 +36,7 @@
         color: rgb(184, 250, 204);
         text-decoration: none;
         text-transform: capitalize;
-        font-size: 16px;
+        font-size: 12px;
         font-weight: 600;
         transition: all 0.3s ease-in-out;
         font-family: var(--font-secondary);

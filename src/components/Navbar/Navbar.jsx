@@ -23,6 +23,11 @@ const Navbar = () => {
           <li><a href="/Referral">Referrals</a></li>
           <li><a href="/Contact">Contact</a></li>
         </ul>
+
+
+        <button type='buttun' className='button'>Order Now</button>
+        <button type='buttun' className='button-m'>Order Now</button>
+
         <div className="app__navbar-menu">
           <HiMenuAlt4 onClick={() => setToggle(true)}/>
           

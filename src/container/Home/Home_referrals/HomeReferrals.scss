@@ -1,3 +1,11 @@
+.app__referral-bg{
+    background-image:  url("../../../assets/referral.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat;
+}
+
+
 .app__homereferrals{
     width: 100%;
     min-height: 100vh;
@@ -14,9 +22,10 @@
     .app__homeref-content{
         color: black;
         position: absolute;
-        right: 200px;
+        right: 50px;
         top: 50%;
         transform: translateY(-50%, -50%);
+        
 
 
         @media screen and(max-width: 1180px){
@@ -34,7 +43,7 @@
             }
 
         h1{
-            color: #28a745;
+            color: white;
             font-size: 40px;
             text-transform: capitalize;
             font-family: var(--font-heading);
@@ -47,9 +56,17 @@
             font-family: var(--font-subheading);
             letter-spacing: 2px;
             font-weight: 600;
+            color: azure;
         }
        
     }
 
     
 }
+
+
+
+// background: url('./assets/bg_main.png');
+// background-position: center;
+// background-size: cover;
+// background-repeat: repeat;
