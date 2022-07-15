@@ -13,6 +13,17 @@ import fishbg from '../assets/fishbg.jpg';
 import friends from '../assets/friends.jpg';
 import money from '../assets/money.jpg';
 import referral from '../assets/referral.jpg';
+import facebook from '../assets/facebook.svg';
+import instagram from '../assets/instagram.svg';
+import twitter from '../assets/twitter.svg';
+import youtube from '../assets/youtube.svg';
+import chatting from '../assets/chatting.png';
+import payments from '../assets/payments.png';
+import posting from '../assets/posting.png';
+import queensfield_m from '../assets/queensfield_m.jpg';
+import lets_talk from '../assets/lets_talk.jpg';
+import whoweare from '../assets/whoweare.jpg';
+
 
 
 export default {bg_head, 
@@ -29,4 +40,14 @@ export default {bg_head,
     fishbg,
     friends,
     money,
-    referral}
+    referral,
+    facebook,
+    twitter,
+    instagram,
+    youtube,
+    payments,
+    posting,
+    chatting,
+    queensfield_m,
+    lets_talk,
+    whoweare}

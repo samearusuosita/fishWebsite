@@ -29,18 +29,6 @@
         }
     
     }
-    // edit btn
-    .button-m{
-        display: none;
-    }
-
-    @media screen and (max-width: 1200px){
-        .button{
-            display: none;
-        }
-        
-    }
-    
 }
 
 .app__navbar-links{
@@ -67,12 +55,18 @@
         text-transform: capitalize;
         font-weight: 600;
         transition: all 0.3s ease-in-out;
-        font-family: var(--font-secondary);
+        font-family: var(--font-heading);
         letter-spacing: 2px;
         
 
         &:hover{
             color: var(--primary);
+        }
+
+        &:active{
+            color: green;
+            -webkit-background-clip: text;
+            background-clip: text;
         }
     }
 
@@ -92,6 +86,11 @@
     justify-content: center;
     align-items: center;
     background: black;
+    flex-direction: column;
+
+   
+
+    
    
 
     svg{
@@ -108,55 +107,70 @@
 
         z-index: 5;
         padding: 1rem;
-        width: 80%;
+        width: 100%;
         height: 100vh;
         display: flex;
         justify-content: flex-end;
         align-items: flex-end;
         flex-direction: column;
-        background: black;
+        background: rgb(0, 3, 0);
+        background-image: url("../../assets/bg_main.png");
         box-shadow: 0 0 20px rgb(168, 168, 168, 0.15);
+
+        .social-icons-nav{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+                     
+        }
+
 
         svg{
             width: 35px;
             height: 35px;
-            color: var(--primary);
+            color: var(--white);
             margin: 0.5rem 1rem;
+
+            &:hover{
+                color: var(--primary);
+            }
         }
 
         ul{
             list-style: none;
             margin: 0;
             padding: 0;
-            height: 100%;
+            // height: 100%;
             width: 100%;
 
             display: flex;
-            justify-content: flex-start;
-            align-items: flex-start;
+            justify-content: center;
+            align-items: center;
             flex-direction: column;
 
             li{
-                margin: 1rem;
+                margin: 2rem;
                 
                 a{
-                    color: var(--white);
+                    color: var(--primary);
                     text-decoration: none;
-                    font-size: 1rem;
+                    font-size: 5vw;
                     text-transform: capitalize;
-                    font-weight: 600;
+                    font-weight: 500;
+                    
 
                     transition: all 0.3s ease-in-out;
 
                     &:hover{
-                        color: var(--primary);
+                        color: var(--white);
                     }
                 }
-                &:hover{
-                    div {
-                        background: gray;
-                    }
-                }
+                // &:hover{
+                //     div {
+                //         background: gray;
+                //     }
+                // }
             }
         }
 

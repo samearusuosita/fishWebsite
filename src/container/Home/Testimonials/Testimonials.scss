@@ -1,7 +1,7 @@
 .app__testimonials{
     position: relative;
     width: 100%;
-    min-height: 100vh;
+    // min-height: 100vh;
     // display: flex;
     justify-content: center;
     align-items: center;
@@ -58,7 +58,8 @@
     background-size: cover;
     width: 320px;
     box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
-    background: rgb(220, 253, 220);
+    background: rgb(255, 255, 255);
+    
 
     
     
@@ -131,7 +132,7 @@
   }
 
   .swiper-slide-visible{
-      filter: blur(2px);
+      filter: blur(3px);
 
       &:active{
         background: #28a745;

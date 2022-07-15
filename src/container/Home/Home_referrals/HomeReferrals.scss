@@ -1,4 +1,4 @@
-.app__referral-bg{
+#app__referral-bg{
     background-image:  url("../../../assets/referral.jpg");
     background-position: center;
     background-size: cover;
@@ -7,10 +7,13 @@
 
 
 .app__homereferrals{
+    flex: 1;
     width: 100%;
-    min-height: 100vh;
-    position: relative;
-
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
     @media screen and(max-width: 1180px){
         min-height: 50vh;
         }
@@ -20,27 +23,33 @@
         }
 
     .app__homeref-content{
-        color: black;
-        position: absolute;
-        right: 50px;
+        text-align: center;
         top: 50%;
+        left: 50%;
         transform: translateY(-50%, -50%);
+
+        .btn-center-ref{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        
         
 
 
-        @media screen and(max-width: 1180px){
-            justify-content: center;
-            align-items: center;
-            display: flex;
-            flex-direction: column;
-            }
+        // @media screen and(max-width: 1180px){
+        //     justify-content: center;
+        //     align-items: center;
+           
+        //     }
             
-            @media screen and(max-width: 450px){
-                right: 0;
-                text-align: center;
-                align-items: center;
+        //     @media screen and(max-width: 450px){
+        //         right: 0;
+        //         text-align: center;
+        //         align-items: center;
               
-            }
+        //     }
 
         h1{
             color: white;
@@ -63,10 +72,3 @@
 
     
 }
-
-
-
-// background: url('./assets/bg_main.png');
-// background-position: center;
-// background-size: cover;
-// background-repeat: repeat;

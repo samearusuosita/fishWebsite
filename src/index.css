@@ -5,10 +5,10 @@
 
 :root {
   --font-base: 'Arizonia', cursive;
-  --font-primary: 'Della Respira', serif;
-  --font-secondary: 'Roboto', sans-serif;
-  --font-subheading: 'Raleway', sans-serif;
   --font-heading: 'Inter', sans-serif;
+  --font-primary: 'Della Respira', serif;
+  --font-subheading: 'Raleway', sans-serif;
+
 
   --primary: #3AC900;
   --black: #030303;

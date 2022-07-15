@@ -9,8 +9,6 @@ import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 
-// import "./styles.css";
-
 // import required modules
 import { EffectCoverflow, Pagination } from "swiper";
 import { images } from "../../../constants";
@@ -20,7 +18,7 @@ import { images } from "../../../constants";
 const Testimonials = () => {
 
   return (
-    <div className="app__testimonials app__bg-main">
+    <div className="app__testimonials">
       <div className="head-text-test">
          <h1 className='title-text'>our customer stories</h1>
        <h5 className="title-text-sub">better sevice starts here</h5>

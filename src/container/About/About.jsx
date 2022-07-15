@@ -4,29 +4,36 @@ import './About.scss';
 import Orderslist from '../../components/Orders_list/Orders_list';
 
 import { images } from '../../constants';
+import {Testimonials} from '../Home';
+
+import HeadingSection from '../../components/Heading/headingSection';
 
 
 
 const About = () => {
   return (
-    <div className="app__about app__bg-main">
-       <>
-       <h1 className='title-text'>About Us</h1>
-       <h5 className="title-text-sub">Welcome to queensfield, we are glade you are here</h5>
-      </>
-
-      <div className='app__orders'>
+    <div className="app__about">
       
-        <div className="app__order-content">
-          <img src={images.about} alt="" />
-          <div className="app__orders-text">
-             <Orderslist 
-              title="Dry Asa Fish" 
-              description="Lorem Ipsum is simply dummy text of the printing and 
-              typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry."/>
-          </div>
-        </div>
+      <div className='app__about-bgH'>
+      <HeadingSection Wtitle="Who we are" wsub="the Goldmine of healthy living"/>
       </div>
+
+      <div className="app__about-content">
+      <div className='app__orders'>
+              <div className="app__order-content">
+                <img src={images.whoweare} alt="" />
+                <div className="app__orders-text">
+                  <Orderslist 
+                    title="We are Queensfield Ltd." 
+                    description="Lorem Ipsum is simply dummy text of the printing and 
+                    typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and 
+                    typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry."/>
+                </div>
+              </div>
+            </div>
+      <Testimonials/>
+      </div>
+
     </div>
   )
 }

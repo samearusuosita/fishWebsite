@@ -6,6 +6,11 @@ import {MdOutlineRestaurantMenu} from 'react-icons/md';
 import {motion} from 'framer-motion';
 
 
+
+import {BsTwitter, BsInstagram} from "react-icons/bs";
+import {FaFacebookF} from "react-icons/fa";
+
+
 const Navbar = () => {
 
   const [toggle, setToggle] = useState(false);
@@ -24,10 +29,6 @@ const Navbar = () => {
           <li><a href="/Contact">Contact</a></li>
         </ul>
 
-
-        <button type='buttun' className='button'>Order Now</button>
-        <button type='buttun' className='button-m'>Order Now</button>
-
         <div className="app__navbar-menu">
           <HiMenuAlt4 onClick={() => setToggle(true)}/>
           
@@ -43,11 +44,29 @@ const Navbar = () => {
             <li><a href="/Referral">Referrals</a></li>
             <li><a href="/Contact">Contact</a></li>
           </ul>
+          
+          <ul className="social-icons-nav">
+                  <li><a href="/facebook.com"><FaFacebookF/></a></li>
+                  <li><a href="/instagram.com"><BsInstagram/></a></li>
+                  <li><a href="/twitter.com"><BsTwitter/></a></li>
+                </ul>
           </motion.div>
           )}
+
+           
       </div>
 
       </div>
+     
+
+      {/* <div className="social-icons-nav">
+                <ul>
+                  <li><a href="/facebook.com"><FaFacebookF/></a></li>
+                  <li><a href="/instagram.com"><BsInstagram/></a></li>
+                  <li><a href="/twitter.com"><BsTwitter/></a></li>
+                </ul>
+              </div> */}
+
     </>
     
   )
