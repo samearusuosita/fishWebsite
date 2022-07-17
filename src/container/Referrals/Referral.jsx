@@ -43,7 +43,7 @@ const Referral = () => {
               <HiwUI imgurl={images.posting} title="Get/Share Posts" description="You will get weekly WhatsApp, Facebook and Instagram posts from us, 
             which you will share across all your social media platforms."/>
               <HiwUI imgurl={images.payments} title="Get Rewarded" description="Receive 5% commision on every order placed by your refferals. 
-            Grow your net income by refering more customers to Queensfield."/>
+            Grow your net income by refering more customers to Queensfield on weekly basics."/>
             </div>
 
           </div>

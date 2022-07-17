@@ -1,5 +1,8 @@
 #app__referral-bg{
-    background-image:  url("../../../assets/referral.jpg");
+    // background-image:  url("../../../assets/referral.jpg");
+    background:
+        linear-gradient(rgba(0,0,0,0)0%, rgba(0, 168, 28, 0.5)100%),
+        url('../../../assets/referral.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: repeat;
@@ -33,29 +36,13 @@
             justify-content: center;
             align-items: center;
         }
-        
-        
-        
-
-
-        // @media screen and(max-width: 1180px){
-        //     justify-content: center;
-        //     align-items: center;
-           
-        //     }
-            
-        //     @media screen and(max-width: 450px){
-        //         right: 0;
-        //         text-align: center;
-        //         align-items: center;
-              
-        //     }
-
+         
         h1{
             color: white;
             font-size: 40px;
             text-transform: capitalize;
             font-family: var(--font-heading);
+            line-height: 50px;
         }
     
         p{
@@ -65,6 +52,8 @@
             font-family: var(--font-subheading);
             letter-spacing: 2px;
             font-weight: 600;
+            padding-top: 10px;
+            padding-bottom: 30px;
             color: azure;
         }
        

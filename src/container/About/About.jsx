@@ -19,19 +19,20 @@ const About = () => {
       </div>
 
       <div className="app__about-content">
-      <div className='app__orders'>
-              <div className="app__order-content">
-                <img src={images.whoweare} alt="" />
-                <div className="app__orders-text">
-                  <Orderslist 
-                    title="We are Queensfield Ltd." 
-                    description="Lorem Ipsum is simply dummy text of the printing and 
-                    typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and 
-                    typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry."/>
+        <div className='app__orders'>
+                <div className="app__order-content">
+                  <img src={images.whoweare} alt="" />
+                  <div className="app__orders-text">
+                    <Orderslist 
+                      title="We are Queensfield Ltd." 
+                      description="Lorem Ipsum is simply dummy text of the printing and 
+                      typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and 
+                      typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+                    />
+                  </div>
                 </div>
-              </div>
-            </div>
-      <Testimonials/>
+        </div>
+           <Testimonials/>
       </div>
 
     </div>

@@ -34,9 +34,9 @@ const Oders = () => {
 
       <div className='app__orders'>
         <div className="app__order-content reverse">
-        <div className="orders-img-cont">
-          <img src={images.catfish} alt="" />
-        </div>
+          <div className="orders-img-cont">
+            <img src={images.catfish} alt="" />
+          </div>
           
           <div className="app__orders-text">
             <Orderslist 

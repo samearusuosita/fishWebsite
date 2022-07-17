@@ -1,6 +1,5 @@
 .app__about{
     width: 100%;
-    min-height: 100vh;
     background-image: url(../../assets/bg_main.png);
 
     .app__about-bgH{
@@ -13,15 +12,34 @@
         background-repeat: no-repeat;
         background-size: cover;
         padding-top: 10%;
+
+        @media screen and(max-width: 1180px) {
+          height: 30vh;          
+        }
       }
+
+      .app__about-content{
+        padding-top: 70px;
+
+        .app__orders{
+
+          img{
+            transform: none;
+          }
+          
+          @media screen and (min-width: 1180px) {
+            padding-bottom: 100px;
+            
+          }
+        }
+      }
+      
 
 
 }
 
-.app__about-content{
-  padding-top: 70px;
 
-
-  
+.content-center{
+  background: linear-gradient((green)0%, (black)100%);
 }
 

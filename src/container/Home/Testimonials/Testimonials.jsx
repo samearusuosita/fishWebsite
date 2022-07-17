@@ -18,7 +18,7 @@ import { images } from "../../../constants";
 const Testimonials = () => {
 
   return (
-    <div className="app__testimonials">
+    <div className="app__testimonials content-center">
       <div className="head-text-test">
          <h1 className='title-text'>our customer stories</h1>
        <h5 className="title-text-sub">better sevice starts here</h5>

@@ -1,9 +1,5 @@
 import React from 'react';
 
-import '../Orders_list/Orders_list.scss';
-
-
-
 const Orders_list = ({ title, description}) => (
   <div className='app__orders-content'>
         <div className="app__orders-content-info">

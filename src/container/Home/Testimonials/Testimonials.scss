@@ -22,7 +22,16 @@
      }
 
      .head-text-test{
-      // padding: 100px;
+      
+      .title-text{
+        color: white !important;
+        }
+
+        .title-text-sub{
+        color: white;
+        line-height: 30px;
+
+    }
 
       @media screen and(max-width: 1180px ){
         // padding-top: 50px;
