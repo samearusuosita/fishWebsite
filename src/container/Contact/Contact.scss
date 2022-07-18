@@ -14,6 +14,11 @@
         background-repeat: no-repeat;
         background-size: cover;
         padding-top: 10%;
+
+        @media screen and(max-width: 1180px){
+            height: 30vh;
+            
+        }
         
       }
 }
@@ -23,7 +28,12 @@
     position: relative;
     width: 100%;
     padding: 40px 100px;
-    // min-height: 100vh;
+    
+    
+    @media screen and(max-width: 1180px){
+        padding: 10px 50px;
+        
+    }
 
 
     .contact{
@@ -38,8 +48,16 @@
         h3{
             color: rgb(0, 0, 0);
             font-weight: 500;
-            font-size: 1.4rem;
+            font-size: 2.5vw;
             margin-bottom: 18px;
+            padding-bottom: 20px;
+            font-family: var(--font-subheading);
+            letter-spacing: 2px;
+
+            @media screen and(max-width: 1180px){
+                font-size: 4vw;
+                
+            }
 
         }
 
@@ -60,7 +78,6 @@
 
                 input, textarea{
                     display: block;
-                    // height: 100%;
                     width: 100%;
                     border: none;
                     border-bottom: 2px solid green;
@@ -79,6 +96,8 @@
                     color: black;
                     font-size: 16px;
                     font-weight: 500;
+                    font-family: var(--font-subheading);
+                    letter-spacing: 1px;
                     padding-bottom: 10px;
 
                 }
@@ -123,9 +142,9 @@
                     padding-left: 20px;
                     color: white;
                     text-decoration: none;
-                    font-family: var(--font-primary);
-                    letter-spacing: 2px;
-                    font-size: 16;
+                    font-family: var(--font-subheading);
+                    letter-spacing: 3px;
+                    font-size: 16px;
 
                     &:hover{
                         color: greenyellow;
@@ -147,6 +166,7 @@
         "form socail";
         gap: 40px;
         margin-top: 20px;
+        
 
 
         .form{
@@ -173,17 +193,17 @@
                 color: black;
                 font-size: 32px;
                 font-weight: 400;
-                font-family: var(--font-primary);
-                letter-spacing: 1px;
+                font-family: var(--font-subheading);
+                letter-spacing: 2px;
                 padding-bottom: 15px;
             }
             
             p{
                 color: black;
-                font-family: var(--font-primary);
+                font-family: var(--font-subheading);
                 font-size: 16px;
                 font-weight: 400;
-                letter-spacing: 1px;
+                letter-spacing: 3px;
                 line-height: 1.5rem;
                 padding-bottom: 15px;
 
@@ -195,8 +215,9 @@
             a{
                 font-size: 16px;
                 font-weight: 400;
-                letter-spacing: 1px;
+                letter-spacing: 2px;
                 line-height: 2rem;
+                font-family: var(--font-subheading);
                 text-decoration: none;
                 color: black;
 
@@ -221,8 +242,8 @@
                 color: white;
                 font-size: 32px;
                 font-weight: 400;
-                font-family: var(--font-primary);
-                letter-spacing: 1px;
+                font-family: var(--font-subheading);
+                letter-spacing: 3px;
                 padding-bottom: 15px;
             }
 

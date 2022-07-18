@@ -1,4 +1,5 @@
-import React from 'react';
+import React, {useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
 import './Contact.scss'
 import HeadingSection from '../../components/Heading/headingSection';
@@ -8,24 +9,33 @@ import { HomeReferrals } from '../Home';
 import {BsTwitter, BsInstagram} from "react-icons/bs";
 import {FaFacebookF} from "react-icons/fa";
 
-import {MotionWrap} from '../../wrapper'
+import {MotionWrap} from '../../wrapper';
 
 
 
 const Contact = () => {
 
-   // const inputs = [
-  //   {    
-  //     id: 1,
-  //     name:"fullname",
-  //     type: "text",
-  //     placeholder: "E.g. Samuel Osita",
-  //     errorMessage: "Full Name should be 3 - 16 characters and shouldnt include any special character",
-  //     lable: "Full Name",
-  //     pattern: "^[A-Za-z0-9]{3,30}$",
-  //     require: true,
-  //   },
-    
+
+  // Submitting contact form
+
+  const form = useRef(null);
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_u0r75bj', 'template_hyvg6da', form.current, 'Gv3ek3VoD7N2IEviR')
+      .then((result) => {
+          console.log(result.text);
+          form.current.reset(); 
+
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
+
+  
+ 
+
 
   return (
     <div className="main">
@@ -40,39 +50,40 @@ const Contact = () => {
           <div className="contact form">
             <h3>Kindly Fill Our Contact Form</h3>
 
-              <form>
+            
+              <form ref={form} onSubmit={sendEmail}>
                 <div className="formBox">
                   <div className="row50">
                     <div className="inputBox">
                       <span>Full Name</span>
-                      <input type="text" placeholder='E.g: John Doe'/>
+                      <input id='user_name' type="text" name="user_name" placeholder='E.g: John Doe'/>
                     </div>
                   </div>
                   
                   <div className="row50">
                       <div className="inputBox">
                         <span>Email</span>
-                        <input type="email" placeholder='E.g: John@email.com' />
+                        <input  id='user_email' type="email" name="user_email" placeholder='E.g: John@email.com'/>
                       </div>
                   </div>
 
                   <div className="row50">
                     <div className="inputBox">
                         <span>Mobile</span>
-                        <input type="tel" placeholder='E.g: 123 456 789' />
+                        <input id='user_mobile' type="tel" name="user_mobile" placeholder='E.g: 123 456 789'/>
                       </div>
                   </div>
 
                   <div className="row100">
                     <div className="inputBox">
                       <span>Message</span>
-                      <textarea name="" id="" cols="25" rows="10" placeholder='Enter your Message'></textarea>
+                      <textarea id='message' name="message" cols="25" rows="10" placeholder='Enter your Message'></textarea>
                     </div>
                   </div>
 
                   <div className="submit-btn">
                   
-                      <button type='button'>Send Message</button>
+                      <button type="submit" value="Send" onClick={() => alert('Thank you for getting in touch!')}>Send Message Now</button>
                     
                   </div>
 
@@ -110,4 +121,4 @@ const Contact = () => {
   )
 }
 
-export default MotionWrap(Contact, "main");
+export default MotionWrap (Contact);

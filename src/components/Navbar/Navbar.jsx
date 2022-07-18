@@ -5,8 +5,6 @@ import {HiMenuAlt4} from 'react-icons/hi';
 import {MdOutlineRestaurantMenu} from 'react-icons/md';
 import {motion} from 'framer-motion';
 
-
-
 import {BsTwitter, BsInstagram} from "react-icons/bs";
 import {FaFacebookF} from "react-icons/fa";
 
@@ -14,6 +12,9 @@ import {FaFacebookF} from "react-icons/fa";
 const Navbar = () => {
 
   const [toggle, setToggle] = useState(false);
+
+  
+
 
 
   return (
@@ -43,6 +44,7 @@ const Navbar = () => {
             <li><a href="/About">About</a></li>
             <li><a href="/Referral">Referrals</a></li>
             <li><a href="/Contact">Contact</a></li>
+            
           </ul>
           
           <ul className="social-icons-nav">

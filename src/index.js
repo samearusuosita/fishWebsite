@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import {About, Contact, Referral} from './container';
 import { Footer, Navbar } from './components';
 
+
 import {
   BrowserRouter,
   Routes,
@@ -13,28 +14,37 @@ import {
 } from "react-router-dom";
 
 
+
+
+
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+
+
+  
   <React.StrictMode>
     <Navbar />
-    <BrowserRouter>
-    <Routes>
-      <Route path="/" element={<App />} />
-      <Route path="About" element={<About/>} />
-      <Route path="Referral" element={<Referral/>} />
-      <Route path="Contact" element={<Contact />} />
-      <Route path="*" element={
-        <main className="app__bg-main">
-          
-          <h1>404</h1>
-          <p>There's nothing here!</p>
-            <button type='button' className='button'><a href="/">Go Back to Home</a></button>
-        </main>
-      }
-    />
-    </Routes>
-  </BrowserRouter>
-  <Footer />
+      <BrowserRouter>
+      
+        <Routes>
+          <Route path="/" element={<App />}/>
+          <Route path="About" element={<About/>}/>
+          <Route path="Referral" element={<Referral/>}/>
+          <Route path="Contact" element={<Contact />}/>
+          <Route path="*" element={
+            <main className="app__bg-main">
+              
+              <h1>404</h1>
+              <p>There's nothing here!</p>
+                <button type='button' className='button'><a href="/">Go Back to Home</a></button>
+            </main>
+          }
+          />
+        </Routes>
+    
+      </BrowserRouter>
+      <Footer />
   </React.StrictMode>
 );
 

@@ -141,7 +141,6 @@
             list-style: none;
             margin: 0;
             padding: 0;
-            // height: 100%;
             width: 100%;
 
             display: flex;
@@ -166,11 +165,6 @@
                         color: var(--white);
                     }
                 }
-                // &:hover{
-                //     div {
-                //         background: gray;
-                //     }
-                // }
             }
         }
 
@@ -187,7 +181,8 @@
 
 }
 
-
-
+.active{
+    color: #fff;
+} 
 
 
