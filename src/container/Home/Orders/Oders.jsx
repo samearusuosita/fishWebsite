@@ -24,8 +24,9 @@ const Oders = () => {
           <div className="app__orders-text">
              <Orderslist 
               title="Dry Asa Fish" 
-              description="Lorem Ipsum is simply dummy text of the printing and 
-              typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry." 
+              description="No doubt, Asa-Mangala fish is one of the most popular delicacies in many Nigerian homes.
+               According to experts, Asa (Mangala) stands out for its lasting taste, and highly preserved nutritional values.
+               Asa tends to have more flesh, and when a little piece of the dried fish is cut and chewed it fills the mouth. Try it in your meal today." 
               />
               <OrderBtn/>
           </div>
@@ -41,8 +42,9 @@ const Oders = () => {
           <div className="app__orders-text">
             <Orderslist 
               title="Dry CatFish" 
-              description="Lorem Ipsum is simply dummy text of the printing and 
-              typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry." 
+              description="Are you thinking of low calories and lean protein sea food? Think no more... 
+              our catfish has heart-healthy omega-3 fats and vitamin B12. It is fresh and naturally-smoked under 
+              highly hygienic conditions, and its from the lake Chad Basin and Cameron. " 
               />
               <OrderBtn/>
           </div>
@@ -59,8 +61,10 @@ const Oders = () => {
           <div className="app__orders-text">
             <Orderslist 
               title="Dry Crayfish" 
-              description="Lorem Ipsum is simply dummy text of the printing and 
-              typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry." 
+              description="Image the taste of dried edible crustaceans in your meal... 
+              Seafood is a high protein food that is low in calories, high in vitamins and minerals, 
+              with numerous health benefits. Recent studies have shown that eating seafood can decrease the risk of heart attack, 
+              stroke, obesity, and hypertension. Whether you are preparing soup or stew, try our Dry Crayfish today." 
               />
               <OrderBtn/>
           </div>

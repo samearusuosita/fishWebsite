@@ -1,6 +1,8 @@
 import React from 'react';
 import { images } from '../../../constants';
 
+import {MotionWrap} from '../../../wrapper';
+
 
 import './Delivery.scss'
 
@@ -19,4 +21,4 @@ const Delivery = () => {
   )
 }
 
-export default Delivery
+export default MotionWrap (Delivery)

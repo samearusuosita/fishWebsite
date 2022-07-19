@@ -227,7 +227,7 @@
                 list-style: none;
 
                 &:first-child{
-                    padding-bottom: 15px;
+                    padding-bottom: 20px;
                 }
                 &:last-child{
                     padding-bottom: 2rem;
@@ -240,11 +240,12 @@
                 font-weight: 400;
                 font-family: var(--font-subheading);
                 letter-spacing: 2px;
-                padding-bottom: 15px;
+                padding-bottom: 3rem;
 
                 @media screen and(max-width: 450px) {
                     padding-top: 2.5rem;
                     font-weight: 600;
+                    padding-bottom: 15px;
                     
                 }
             }
@@ -283,11 +284,12 @@
                 font-weight: 400;
                 font-family: var(--font-subheading);
                 letter-spacing: 2px;
-                padding-bottom: 15px;
+                padding-bottom: 3rem;
 
                 @media screen and(max-width: 450px) {
                     padding-top: 2rem;
-                    font-weight: 600;                    
+                    font-weight: 600;
+                    padding-bottom: 15px;                    
                     
                 }
             }

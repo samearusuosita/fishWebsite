@@ -15,7 +15,7 @@ const About = () => {
     <div className="app__about">
       
       <div className='app__about-bgH'>
-      <HeadingSection Wtitle="Who we are" wsub="the Goldmine of healthy living"/>
+      <HeadingSection Wtitle="Who we are" wsub="The Goldmine of healthy living"/>
       </div>
 
       <div className="app__about-content">
@@ -25,9 +25,10 @@ const About = () => {
                   <div className="app__orders-text">
                     <Orderslist 
                       title="We are Queensfield Ltd." 
-                      description="Lorem Ipsum is simply dummy text of the printing and 
-                      typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and 
-                      typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+                      description="We deal with the production of healthy and natural farm and dry sea food - Asa fish, Mangala fish, 
+                      Stock fish, Prawn, Crayfish, etc. Queensfield food has been reviewed by professional agriculturists and has proven 
+                      to be completent with its high quality produce, this includes; the size of the produce, unique taste, and freshness. 
+                      We all know that natural foods are at their best when they are fresh."
                     />
                   </div>
                 </div>

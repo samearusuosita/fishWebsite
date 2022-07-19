@@ -26,9 +26,11 @@ const Referral = () => {
             <div className="app__orders-text">
               <Orderslist 
               title="Our Referral Program" 
-              description="Lorem Ipsum is simply dummy text of the printing and 
-              typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and 
-              typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry."/>
+              description="Our referral system is designed to help you earn by recommending our products and 
+              services to your family and friends. You can earn, or use your earnings to order any of our product and services, 
+              which will be delivered to your location at no additional cost. All earningds from our referral program will be 
+              sent directly to your registered account at the end of the week.   
+              "/>
             </div>
           </div>
         </div>

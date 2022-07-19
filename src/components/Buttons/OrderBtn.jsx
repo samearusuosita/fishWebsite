@@ -8,7 +8,7 @@ const OrderBtn = () => {
         <ButtonPrimary order_btn="Order Now" href="/contact"/>
         </div>
         <div className='href-mobile'>
-        <ButtonPrimary order_btn="Order Now" href="tel:07065434953"/>
+        <ButtonPrimary order_btn="Order Now" href="tel:+2348103116234"/>
         </div>
     </>
   )
