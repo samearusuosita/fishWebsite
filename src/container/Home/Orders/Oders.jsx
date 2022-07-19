@@ -1,5 +1,5 @@
 import React from 'react';
-// import Heading from '../../../components/Heading/Heading';
+
 import Orderslist from '../../../components/Orders_list/Orders_list';
 import {images} from '../../../constants';
 import OrderBtn from '../../../components/Buttons/OrderBtn';

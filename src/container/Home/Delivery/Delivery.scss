@@ -14,11 +14,17 @@
 
     .title-text{
         color: white !important;
+        
     }
 
     .title-text-sub{
         color: white;
         line-height: 30px;
+       
+        @media screen and(max-width: 450px) {
+            padding: 0 25px 0 25px;
+            
+        }
 
     }
 
@@ -31,6 +37,11 @@
             padding-top: 4rem;
             padding-bottom: 0;
             margin-bottom: 0;
+
+            @media screen and(max-width: 450px) {
+                height: 100%;
+                
+            }
             
         }
     }

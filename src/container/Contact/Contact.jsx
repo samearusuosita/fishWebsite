@@ -33,12 +33,8 @@ const Contact = () => {
       });
   };
 
-  
- 
-
-
   return (
-    <div className="main">
+    <div className="app__contact-main">
       <div className='app__contact-bgH'>
         <HeadingSection Wtitle="Lets Talk" wsub="Tell us about your orders"/>
       </div>
@@ -48,7 +44,7 @@ const Contact = () => {
         <div className="boxes">
           {/* form box */}
           <div className="contact form">
-            <h3>Kindly Fill Our Contact Form</h3>
+            <h3 className='contact-form_headtext'>Kindly Fill Out the Form</h3>
 
             
               <form ref={form} onSubmit={sendEmail}>
@@ -83,7 +79,7 @@ const Contact = () => {
 
                   <div className="submit-btn">
                   
-                      <button type="submit" value="Send" onClick={() => alert('Thank you for getting in touch!')}>Send Message Now</button>
+                      <button type="submit" value="Send" onClick={() => alert('Thank you for getting in touch!')}>Send Message</button>
                     
                   </div>
 
@@ -104,7 +100,7 @@ const Contact = () => {
 
             {/* socail box */}
           <div className="contact socail">
-            <h3>Get Social</h3>
+            <h3 className='social_headtext'>Get Social</h3>
               <div className="social-icons">
                 <ul>
                   <li><FaFacebookF/><a href="/facebook.com">Facebook</a></li>

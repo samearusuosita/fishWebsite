@@ -1,6 +1,6 @@
 import React from 'react';
 import {Header, Orders, HomeReferrals, Testimonials, Dilivery} from '../Home';
-import './Home.scss'
+
 
 
 

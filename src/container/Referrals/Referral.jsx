@@ -33,11 +33,11 @@ const Referral = () => {
           </div>
         </div>
 
-        <div className="services">
+        <div className="howItWoks-section">
           <div className="service-cont">
-            <h1>How it Works </h1>
+            <h1 className='howItWork-headtext'>How it Works </h1>
 
-            <div className="mycard">
+            <div className="cards-content">
               <HiwUI imgurl={images.chatting} title="Join" description="Get started by clicking the join botton and become part of queensfield referral program. 
             The process takes less than a menute."/>
               <HiwUI imgurl={images.posting} title="Get/Share Posts" description="You will get weekly WhatsApp, Facebook and Instagram posts from us, 

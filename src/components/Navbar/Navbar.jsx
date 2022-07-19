@@ -55,19 +55,9 @@ const Navbar = () => {
           </motion.div>
           )}
 
-           
       </div>
 
       </div>
-     
-
-      {/* <div className="social-icons-nav">
-                <ul>
-                  <li><a href="/facebook.com"><FaFacebookF/></a></li>
-                  <li><a href="/instagram.com"><BsInstagram/></a></li>
-                  <li><a href="/twitter.com"><BsTwitter/></a></li>
-                </ul>
-              </div> */}
 
     </>
     
