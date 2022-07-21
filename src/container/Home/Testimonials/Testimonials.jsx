@@ -17,7 +17,7 @@ import { images } from "../../../constants";
 
 const Testimonials = () => {
 
-  return (
+ return (
     <div className="app__testimonials content-center">
       <div className="head-text-test">
          <h1 className='title-text'>our customer stories</h1>
@@ -50,17 +50,18 @@ const Testimonials = () => {
                 <div className="testimonialBox">
                   <img className="quote" src={images.quote} alt="swipper"/>
                   <div className="content">
-                    <p>This is the testimonia section where all of them will be displayed. kindly add more testimonials here. 
-                      This is the testimonia section where all of them will be displayed. kindly add more testimonials here.
-                      This is the testimonia section where all of them will be displayed. kindly add more testimonials here.
-                      This is the testimonia section where all of them will be displayed. kindly add more testimonials here.
-                      This is the testimonia section where all of them will be displayed. kindly add more testimonials here.
+                    <p>I love queenfield crayfish and Asa fish. It’s very neat and very tasty unlike the regular 
+                      fish in the market that is filled with dirt and chaff. The first time i use their product, 
+                      the aroma of my soup changed, I couldn't resist the sweat taste of the fish inside my soup. 
+                      After i finished eating, I had to go back to the pot of soup to take a piece of fish, 
+                      it was like stealing from my own pot of soup. I’m coming back for more definitely. 
+                      Queensfield is the best.
                     </p>
                     <div className="details">
                       <div className="imgBox">
-                        <img src={images.catfish} alt="" />
+                        <img src={images.ijeoma} alt="" />
                       </div>
-                        <h3>Somone Famouse <br/> <span>Creative Designer</span></h3>
+                        <h3>Amadi Sandra<br/> <span>Fashion Designer</span></h3>
                     </div>
                   </div>
                 </div>
@@ -73,17 +74,17 @@ const Testimonials = () => {
                 <div className="testimonialBox">
                   <img className="quote" src={images.quote} alt="swipper"/>
                   <div className="content">
-                    <p>This is the testimonia section where all of them will be displayed. kindly add more testimonials here. 
-                      This is the testimonia section where all of them will be displayed. kindly add more testimonials here.
-                      This is the testimonia section where all of them will be displayed. kindly add more testimonials here.
-                      This is the testimonia section where all of them will be displayed. kindly add more testimonials here.
-                      This is the testimonia section where all of them will be displayed. kindly add more testimonials here.
+                    <p>I love Queensfield Asa mangala mostly because the taste of that particular fish is something 
+                      else unlike other fish, the color and taste is everything a good meal needs to have a complete taste, 
+                      I prefer using it to make my soup and jollof rice and also eat it cos it has a very good taste also her 
+                      crayfish is very neat and tasty too, it adds so much sweetness to your home cooked meal, 
+                      it’s Queensfield or nothing period.
                     </p>
                     <div className="details">
                       <div className="imgBox">
-                        <img src={images.catfish} alt="" />
+                        <img src={images.mnsignature} alt="" />
                       </div>
-                        <h3>Somone Famouse <br/> <span>Creative Designer</span></h3>
+                        <h3>Miracle Nwaele <br/> <span>Fashion Designer</span></h3>
                     </div>
                   </div>
                 </div>
@@ -94,17 +95,16 @@ const Testimonials = () => {
                 <div className="testimonialBox">
                   <img className="quote" src={images.quote} alt="swipper"/>
                   <div className="content">
-                    <p>This is the testimonia section where all of them will be displayed. kindly add more testimonials here. 
-                      This is the testimonia section where all of them will be displayed. kindly add more testimonials here.
-                      This is the testimonia section where all of them will be displayed. kindly add more testimonials here.
-                      This is the testimonia section where all of them will be displayed. kindly add more testimonials here.
-                      This is the testimonia section where all of them will be displayed. kindly add more testimonials here.
+                    <p>When you think of using something healthy, fresh and delicious for your assorted meal types then queen’s 
+                      field is there to deliver it. Not only is her crayfish free from sand and unnecessary chaff but it gives 
+                      food the exceptional taste that makes me come looking for more, I can personally testify to the taste and beautiful aroma it gave to my rice and soup when I used it everyone 
+                      in my family was asking for more. When she said is a farm far from other regular farms it is surely true.
                     </p>
                     <div className="details">
                       <div className="imgBox">
-                        <img src={images.catfish} alt="" />
+                        <img src={images.chidalu} alt="" />
                       </div>
-                        <h3>Somone Famouse <br/> <span>Creative Designer</span></h3>
+                        <h3>Chidalu O.<br/> <span>Nursing - London, Uk</span></h3>
                     </div>
                   </div>
                 </div>

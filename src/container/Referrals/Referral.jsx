@@ -5,14 +5,21 @@ import HeadingSection from '../../components/Heading/headingSection';
 import Orderslist from '../../components/Orders_list/Orders_list';
 
 import { images } from '../../constants';
-
 import ButtonPrimary from '../../components/Buttons/Button_primary';
 
-import HiwUI from '../../components/HowItWorks/HiwUI';
+import { motion } from 'framer-motion';
 
 
 
 const Referral = () => {
+
+const howItWoksCards = [
+  {imgurl: images.chatting, title: "Join", description: "Get started by clicking the join botton and become part of queensfield referral program.The process takes less than a menute."},
+  {imgurl: images.posting, title: "Get/Share Posts", description: "You will get weekly WhatsApp, Facebook and Instagram posts from us, which you will share across all your social media platforms."},
+  {imgurl: images.payments, title: "Get Rewarded", description: "Receive 5% commision on every order placed by your refferals. Grow your net income by refering more customers to Queensfield on weekly basics."}
+]
+
+
   return (
     <div className='app__referral'>
       <div className='app__ref-bgH'>
@@ -21,6 +28,15 @@ const Referral = () => {
       
       <div className='app__bg-main ref-section'>
         <div className='app__orders'>
+
+        <motion.div
+        whileinview={{opacity: 1}}
+        whileHover={{scale: 1.1}}
+        transition={{duration: 0.5, type: "tween"}}
+        className="app__animate-item"
+        key="test"
+        >
+
           <div className="app__order-content">
             <img src={images.queensfield_m} alt="" className='img-ref'/>
             <div className="app__orders-text">
@@ -33,30 +49,33 @@ const Referral = () => {
               "/>
             </div>
           </div>
-        </div>
 
+        </motion.div>  
+ 
+        </div>
         <div className="howItWoks-section">
           <div className="service-cont">
             <h1 className='howItWork-headtext'>How it Works </h1>
-
+            
             <div className="cards-content">
-              <HiwUI imgurl={images.chatting} title="Join" description="Get started by clicking the join botton and become part of queensfield referral program. 
-            The process takes less than a menute."/>
-              <HiwUI imgurl={images.posting} title="Get/Share Posts" description="You will get weekly WhatsApp, Facebook and Instagram posts from us, 
-            which you will share across all your social media platforms."/>
-              <HiwUI imgurl={images.payments} title="Get Rewarded" description="Receive 5% commision on every order placed by your refferals. 
-            Grow your net income by refering more customers to Queensfield on weekly basics."/>
+            {howItWoksCards.map((howItWoksCards, index) => 
+            (
+              <div className="card1" key={index}>
+                <div className="img-col">
+                  <img src={howItWoksCards.imgurl} alt="test"/>
+                </div>
+                <div className="card-content">
+                  <h3 className='card-h'>{howItWoksCards.title}</h3>
+                  <p className='card-p'>{howItWoksCards.description}</p>
+                </div>
+              </div>
+            ))}
             </div>
-
           </div>
-
           <div className="btn-ref">
-        <ButtonPrimary href="/contact" order_btn="Joing the Program"/>
+          <ButtonPrimary href="/contact" order_btn="Joing the Program"/>
         </div>
         </div>
-
-        
-
       </div>
     </div>
   )

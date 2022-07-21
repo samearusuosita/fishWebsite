@@ -2,12 +2,10 @@ import React from 'react';
 import './About.scss';
 
 import Orderslist from '../../components/Orders_list/Orders_list';
-
 import { images } from '../../constants';
 import {Testimonials} from '../Home';
-
 import HeadingSection from '../../components/Heading/headingSection';
-
+import { motion } from 'framer-motion';
 
 
 const About = () => {
@@ -20,7 +18,15 @@ const About = () => {
 
       <div className="app__about-content">
         <div className='app__orders'>
-                <div className="app__order-content">
+                
+        <motion.div
+        whileinview={{opacity: 1}}
+        whileHover={{scale: 1.1}}
+        transition={{duration: 0.5, type: "tween"}}
+        className="app__animate-item"
+        key="test"
+        >
+          <div className="app__order-content">
                   <img src={images.whoweare} alt="" />
                   <div className="app__orders-text">
                     <Orderslist 
@@ -32,6 +38,8 @@ const About = () => {
                     />
                   </div>
                 </div>
+
+        </motion.div>      
         </div>
            <Testimonials/>
       </div>

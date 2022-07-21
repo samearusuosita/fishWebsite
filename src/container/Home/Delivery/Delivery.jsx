@@ -15,7 +15,7 @@ const Delivery = () => {
           <h5 className="title-text-sub">No matter how small or big your order is, we will still deliver to your destination</h5>
        </div>
        <div className="app__delivery-img">
-          <img src={images.delivery} alt="delivery" />
+          <img src={images.deliveryMan} alt="delivery" />
         </div>
     </div>
   )

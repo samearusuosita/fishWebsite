@@ -77,15 +77,21 @@
           
       .quote{
         position: relative;
-        // top: 20px;
         float: right;
-        // right: 30px;
         opacity: 0.2;
         svg{
           color: #28a745;
         }
+      }
 
-        
+      .content{
+        p{
+          color: black;
+          font-family: var(--font-subheading);
+          letter-spacing: 1px;
+          font-size: 14px;
+          line-height: 20px;
+        }
       }
      
         
@@ -96,19 +102,21 @@
         margin-top: 20px;
     
         h3{
-          font-size: 16px;
+          font-size: 15px;
           font-weight: 400;
           letter-spacing: 1px;
-          color: green;
+          color: rgb(1, 78, 1);
           line-height: 1.1em;
+          font-family: var(--font-subheading);
           padding: 15px;
     
           span{
             font-size: 12px;
-            color: #666;
+            color: rgb(0, 0, 0);
           }
     
         }
+        
       }
 
       .imgBox{

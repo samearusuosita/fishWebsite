@@ -23,6 +23,11 @@ import posting from '../assets/posting.png';
 import queensfield_m from '../assets/queensfield_m.jpg';
 import lets_talk from '../assets/lets_talk.jpg';
 import whoweare from '../assets/whoweare.jpg';
+import deliveryMan from '../assets/deliveryMan.jpg';
+import chidalu from '../assets/chidalu.jpg';
+import ijeoma from '../assets/ijeoma.jpg';
+import mnsignature from '../assets/mnsignature.jpg';
+import mangalafish from '../assets/mangalafish.jpg';
 
 
 
@@ -50,4 +55,9 @@ export default {bg_head,
     chatting,
     queensfield_m,
     lets_talk,
-    whoweare}
+    whoweare,
+    deliveryMan,
+    ijeoma,
+    chidalu,
+    mnsignature,
+    mangalafish}

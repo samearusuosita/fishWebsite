@@ -4,6 +4,8 @@ import Orderslist from '../../../components/Orders_list/Orders_list';
 import {images} from '../../../constants';
 import OrderBtn from '../../../components/Buttons/OrderBtn';
 
+import { motion } from 'framer-motion';
+
 import './Orders.scss'
 
 const Oders = () => {
@@ -14,11 +16,18 @@ const Oders = () => {
        <h1 className='title-text'>Order tasty & mouthwatering <br/>carefully selected fish</h1>
        <h5 className="title-text-sub">For the best meal experience</h5>
       </>
-      <div className='app__orders'>
-      
+
+      <motion.div
+        whileinview={{opacity: 1}}
+        whileHover={{scale: 1.1}}
+        transition={{duration: 0.5, type: "tween"}}
+        className="app__animate-item"
+        key="test"
+        >
+          <div className='app__orders'>     
         <div className="app__order-content">
           <div className="orders-img-cont">
-            <img src={images.mangala} alt="" />
+            <img src={images.mangalafish} alt="" />
           </div>
           
           <div className="app__orders-text">
@@ -32,8 +41,17 @@ const Oders = () => {
           </div>
         </div>
       </div>
+        </motion.div>
 
-      <div className='app__orders'>
+        <motion.div
+        whileinview={{opacity: 1}}
+        whileHover={{scale: 1.1}}
+        transition={{duration: 0.5, type: "tween"}}
+        className="app__animate-item"
+        key="test"
+        >
+
+        <div className='app__orders'>
         <div className="app__order-content reverse">
           <div className="orders-img-cont">
             <img src={images.catfish} alt="" />
@@ -50,9 +68,18 @@ const Oders = () => {
           </div>
         </div>
       </div>
+      </motion.div>
 
 
-      <div className='app__orders'>
+      <motion.div
+        whileinview={{opacity: 1}}
+        whileHover={{scale: 1.1}}
+        transition={{duration: 0.5, type: "tween"}}
+        className="app__animate-item"
+        key="test"
+        >
+
+        <div className='app__orders'>
         <div className="app__order-content">
         <div className="orders-img-cont">
           <img src={images.crayfish} alt="" />
@@ -70,8 +97,7 @@ const Oders = () => {
           </div>
         </div>
       </div>
-
-
+      </motion.div>
     </section>
       )
 }

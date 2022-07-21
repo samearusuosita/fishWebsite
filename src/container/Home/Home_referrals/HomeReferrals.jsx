@@ -11,7 +11,7 @@ const HomeReferrals = () => {
         <h1 className="home-ref-headteat">You can also <br/>Earn by Referring us</h1>
         <p className='home-ref-pteat'>tell your family and friends about us and earn money</p>
       </div>
-      <ButtonPrimary href="/contact" order_btn="Joing the Program" />
+      <ButtonPrimary href="/referral" order_btn="Learn More" />
     </div>
   )
 }

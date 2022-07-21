@@ -1,10 +1,11 @@
 #app__referral-bg{
     background:
         linear-gradient(rgba(0,0,0,0)0%, rgba(0, 168, 28, 0.5)100%),
-        url('../../../assets/referral.jpg');
+        url('../../../assets/lets_talk.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: repeat;
+    background-attachment: fixed;
 }
 
 
