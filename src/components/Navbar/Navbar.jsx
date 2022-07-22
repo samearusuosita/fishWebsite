@@ -28,6 +28,13 @@ const Navbar = () => {
     document.getElementById("nav-a3").style.color = "green";
 
     document.getElementById("logo").style.hieght = "25px";
+
+    document.getElementById("logo").style.display = "none";
+    document.getElementById("logo2").style.display = "";
+    document.getElementById("logo2").style.opacity = "1";
+    
+   
+    
    
    
   } else {
@@ -39,6 +46,10 @@ const Navbar = () => {
     document.getElementById("nav-a3").style.color = "white";
 
     document.getElementById("logo").style.hieght = "40pxpx"
+    
+
+    document.getElementById("logo").style.display = "";
+    document.getElementById("logo2").style.display = "none";
   }}
 
 
@@ -50,6 +61,7 @@ const Navbar = () => {
       <div className='app__navbar' id="navbar">
         <div className="app__navbar-logo">
           <img src={images.queensfield_logo} alt="logo" id="logo"/>
+          <img src={images.queensfield_logo2} alt="logo2" id="logo2"/>
         </div>
         <ul className='app__navbar-links' id='app__navbar-links'>
           <li><a id='nav-a' href="/">Home</a></li>
@@ -69,9 +81,9 @@ const Navbar = () => {
           <MdOutlineRestaurantMenu font size={27} onClick={() => setToggle(false)}/>
           <ul className='app__navbar-links'>
             <li><a href="/">Home</a></li>
-            <li><a href="/About">About</a></li>
-            <li><a href="/Referral">Referrals</a></li>
-            <li><a href="/Contact">Contact</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/referral">Referrals</a></li>
+            <li><a href="/contact">Contact</a></li>
             
           </ul>
           
