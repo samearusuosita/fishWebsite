@@ -88,7 +88,7 @@ const Oders = () => {
           <div className="app__orders-text">
             <Orderslist 
               title="Dry Crayfish" 
-              description="Image the taste of dried edible crustaceans in your meal... 
+              description="Imagine the taste of dried edible crustaceans in your meal... 
               Seafood is a high protein food that is low in calories, high in vitamins and minerals, 
               with numerous health benefits. Recent studies have shown that eating seafood can decrease the risk of heart attack, 
               stroke, obesity, and hypertension. Whether you are preparing soup or stew, try our Dry Crayfish today." 

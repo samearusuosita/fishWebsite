@@ -25,11 +25,14 @@ const Contact = () => {
 
     emailjs.sendForm('service_u0r75bj', 'template_hyvg6da', form.current, 'Gv3ek3VoD7N2IEviR')
       .then((result) => {
-          console.log(result.text);
-          form.current.reset(); 
+          // console.log(result.text);
+          form.current.reset();
+          alert('Thank you for getting in touch!') 
 
       }, (error) => {
-          console.log(error.text);
+          // console.log(error.text);
+          const errorMessage = "Sorry your message was not sent, please check your internet connection.";
+          alert(JSON.stringify(errorMessage))
       });
   };
 
@@ -79,7 +82,7 @@ const Contact = () => {
 
                   <div className="submit-btn">
                   
-                      <button type="submit" value="Send" onClick={() => alert('Thank you for getting in touch!')}>Send Message</button>
+                      <button type="submit" value="Send">Send Message</button>
                     
                   </div>
 
