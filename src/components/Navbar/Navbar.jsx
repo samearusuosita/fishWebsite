@@ -45,7 +45,7 @@ const Navbar = () => {
     document.getElementById("nav-a2").style.color = "white";
     document.getElementById("nav-a3").style.color = "white";
 
-    document.getElementById("logo").style.hieght = "40pxpx"
+    document.getElementById("logo").style.hieght = "35pxpx"
     
 
     document.getElementById("logo").style.display = "";
