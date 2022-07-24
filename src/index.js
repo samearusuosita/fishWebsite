@@ -8,9 +8,9 @@ import { Footer, Navbar } from './components';
 
 
 import {
+  BrowserRouter,
   Routes,
   Route,
-  HashRouter,
 } from "react-router-dom";
 
 
@@ -25,14 +25,14 @@ root.render(
   
   <React.StrictMode>
     <Navbar />
-      <HashRouter>
+      <BrowserRouter>
       
         <Routes>
           <Route path="/" element={<App />}/>
-          <Route path="About" element={<About/>}/>
-          <Route path="Referral" element={<Referral/>}/>
-          <Route path="Contact" element={<Contact />}/>
-          <Route path="*" element={
+          <Route path="/About" element={<About/>}/>
+          <Route path="/Referral" element={<Referral/>}/>
+          <Route path="/Contact" element={<Contact />}/>
+          <Route path="/*" element={
             <main className="app__bg-main">
               
               <h1>404</h1>
@@ -43,7 +43,7 @@ root.render(
           />
         </Routes>
     
-      </HashRouter>
+      </BrowserRouter>
       <Footer />
   </React.StrictMode>
 );

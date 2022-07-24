@@ -37,19 +37,18 @@ const howItWoksCards = [
         key="test"
         >
 
-          <div className="app__order-content">
+          <>
             <img src={images.queensfield_m} alt="" className='img-ref'/>
-            <div className="app__orders-text">
-              <Orderslist 
-              title="Our Referral Program" 
-              description="Our referral system is designed to help you earn by recommending our products and 
-              services to your family and friends. You can earn, or use your earnings to order any of our product and services, 
-              which will be delivered to your location at no additional cost. All earningds from our referral program will be 
-              sent directly to your registered account at the end of the week.   
-              "/>
-            </div>
-          </div>
-
+              <div className="app__orders-text">
+                <Orderslist 
+                  title="Our Referral Program" 
+                  description="Our referral system is designed to help you earn by recommending our products and 
+                  services to your family and friends. You can earn, or use your earnings to order any of our product and services, 
+                  which will be delivered to your location at no additional cost. All earningds from our referral program will be 
+                  sent directly to your registered account at the end of the week."
+                />
+              </div>
+          </>
         </motion.div>  
  
         </div>

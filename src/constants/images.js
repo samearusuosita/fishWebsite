@@ -28,6 +28,7 @@ import chidalu from '../assets/chidalu.jpg';
 import ijeoma from '../assets/ijeoma.jpg';
 import mnsignature from '../assets/mnsignature.jpg';
 import mangalafish from '../assets/mangalafish.jpg';
+import clarissa from '../assets/clarissa.jpg';
 
 
 
@@ -60,4 +61,5 @@ export default {bg_head,
     ijeoma,
     chidalu,
     mnsignature,
-    mangalafish}
+    mangalafish,
+    clarissa}

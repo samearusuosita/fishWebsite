@@ -228,6 +228,7 @@
 
             li{
                 list-style: none;
+               
 
                 &:first-child{
                     padding-bottom: 20px;
@@ -235,6 +236,16 @@
                 &:last-child{
                     padding-bottom: 2rem;
                 }
+
+                svg{
+                    color: green;
+
+                    &:hover{
+                        color: rgb(0, 0, 0);
+                    }
+                }
+
+                
             }
 
             .contact-side-bars{
@@ -245,9 +256,12 @@
                 letter-spacing: 2px;
                 padding-bottom: 3rem;
 
+                @media screen and(max-width: 1180px) {
+                    padding-top: 2.5rem;
+                    
+                }
                 @media screen and(max-width: 450px) {
                     padding-top: 2.5rem;
-                    font-weight: 600;
                     padding-bottom: 15px;
                     
                 }
@@ -261,9 +275,14 @@
                 font-family: var(--font-subheading);
                 text-decoration: none;
                 color: black;
+                padding-left: 20px;
 
                 &:hover{
                     color: green;
+                }
+
+                br{
+                    padding-left: 20px;
                 }
 
             }
@@ -278,7 +297,8 @@
         }
         .socail{
             grid-area: socail;
-            background: linear-gradient(green, black);      
+            background: linear-gradient(green, black);  
+                
             
 
             .social_headtext{
@@ -289,10 +309,14 @@
                 letter-spacing: 2px;
                 padding-bottom: 3rem;
 
+                @media screen and(max-width: 1180px) {
+                    padding-top: 2.5rem;
+                                      
+                    
+                }
                 @media screen and(max-width: 450px) {
                     padding-top: 2rem;
-                    font-weight: 600;
-                    padding-bottom: 15px;                    
+                    padding-bottom: 3rem;                    
                     
                 }
             }
@@ -300,6 +324,17 @@
             @media screen and(max-width: 1200px) {
                 
                 text-align: center;
+                
+            }
+
+            @media screen and(max-width: 1180px) {
+                padding-bottom: 2rem;
+                                  
+                
+            }
+            @media screen and(max-width: 450px) {
+                padding-bottom: 5px;
+                                  
                 
             }
 

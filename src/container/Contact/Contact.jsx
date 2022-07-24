@@ -8,6 +8,11 @@ import { HomeReferrals } from '../Home';
 
 import {BsTwitter, BsInstagram} from "react-icons/bs";
 import {FaFacebookF} from "react-icons/fa";
+import {MdLocationOn} from "react-icons/md";
+import {FaPhoneVolume} from "react-icons/fa";
+import {MdEmail} from "react-icons/md";
+
+
 
 import {MotionWrap} from '../../wrapper';
 
@@ -23,14 +28,12 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_u0r75bj', 'template_hyvg6da', form.current, 'Gv3ek3VoD7N2IEviR')
+    emailjs.sendForm('service_dgo6h0h', 'template_hyvg6da', form.current, 'Gv3ek3VoD7N2IEviR')
       .then((result) => {
-          // console.log(result.text);
           form.current.reset();
           alert('Thank you for getting in touch!') 
 
       }, (error) => {
-          // console.log(error.text);
           const errorMessage = "Sorry your message was not sent, please check your internet connection.";
           alert(JSON.stringify(errorMessage))
       });
@@ -95,9 +98,9 @@ const Contact = () => {
               <div className="contact info">
                 <h3 className='contact-side-bars'>Address</h3>
                 <ul>
-                  <li><a href="/google.com">153 Ademola Adetokumbo <br/>Wuse 2, Abuja, Nigeria</a></li>
-                  <li className='p-text'><a href="tel:+2348103116234">08103116234</a></li>
-                  <li className='p-text'><a href="mailto:sales@myqueensfield.com">sales@myqueensfield.com</a></li>
+                  <li><MdLocationOn/><a href="/google.com">153 Ademola Adetokumbo <br/>Wuse 2, Abuja, Nigeria</a></li>
+                  <li className='p-text'><FaPhoneVolume/><a href="tel:+2348103116234">08103116234</a></li>
+                  <li className='p-text'><MdEmail/><a href="mailto:sales@myqueensfield.com">sales@myqueensfield.com</a></li>
                 </ul>
               </div>
 
