@@ -26,7 +26,7 @@ const About = () => {
           className="app__animate-item"
           key="test"
         >
-          <>
+          <div className='about-info'>
             <img src={images.whoweare} alt="" />
               <div className="app__orders-text">
                 <Orderslist 
@@ -37,7 +37,7 @@ const About = () => {
                     We all know that natural foods are at their best when they are fresh."
                 />
               </div>
-          </>
+          </div>
         </motion.div>      
         </div>
            <Testimonials/>

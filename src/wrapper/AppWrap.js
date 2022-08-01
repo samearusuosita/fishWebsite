@@ -1,13 +1,13 @@
-// implementing higher order components
+// // implementing higher order components
 
-import React from 'react'
+// import React from 'react'
 
-import {NavigationDots} from '../components'
+// import {NavigationDots} from '../components'
 
-const AppWrap = (idName) => function HOC(){
-  return (
-     <NavigationDots active={idName}/>
-  )
-}
+// const AppWrap = (idName) => function HOC(){
+//   return (
 
-export default AppWrap;
+//   )
+// }
+
+// export default AppWrap;

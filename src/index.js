@@ -3,49 +3,46 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import {About, Contact, Referral} from './container';
-import { Footer, Navbar } from './components';
+
+import ButtonPrimary from './components/Buttons/Button_primary';
 
 
 import {
-  BrowserRouter,
+  BrowserRouter, 
   Routes,
   Route,
 } from "react-router-dom";
 
-
-
-
+import {About, Contact, Referral} from './container';
+import { Footer, Navbar } from './components';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-
-
-  
-  <React.StrictMode>
-    <Navbar />
-      <BrowserRouter>
+  <>
+  <Navbar/>
+  <BrowserRouter>
+      <Routes>
       
-        <Routes>
-          <Route path="/" element={<App />}/>
-          <Route path="/About" element={<About/>}/>
-          <Route path="/Referral" element={<Referral/>}/>
-          <Route path="/Contact" element={<Contact />}/>
-          <Route path="/*" element={
-            <main className="app__bg-main">
-              
-              <h1>404</h1>
-              <p>There's nothing here!</p>
-                <button type='button' className='button'><a href="/">Go Back to Home</a></button>
-            </main>
-          }
-          />
-        </Routes>
-    
-      </BrowserRouter>
-      <Footer />
-  </React.StrictMode>
+        <Route path='/' element={<App/>} />
+        <Route path='/About' element={<About/>} />
+        <Route path='/Referral' element={<Referral/>} />
+        <Route path='/Contact' element={<Contact/>} />
+        <Route path='*' element={
+        <div className="app__homereferrals app__flex" id='app__fish-bg'>
+        <div className="app__homeref-content">
+          <h1 className="home-ref-headteat">Opps <br/>There is nothing here</h1>
+          <p className='home-ref-pteat'>it's possible the page you are looking for does not exist</p>
+        </div>
+        <ButtonPrimary href="/" order_btn="Go to Home page" />
+      </div>} />
+      </Routes>
+      
+    </BrowserRouter>
+    <Footer/>
+  </>
+     
+ 
 );
 
 reportWebVitals();

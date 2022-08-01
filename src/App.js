@@ -1,12 +1,16 @@
 import React from 'react';
 import './App.scss';
-import {Home} from './container';
+import {Header, Orders, HomeReferrals, Testimonials, Dilivery} from '../src/container/Home';
 
 
 const App = () => {
   return (
-    <div className='app'>
-      <Home/>
+   <div className="app">
+    <Header/>
+    <Orders/>
+    <Dilivery/>
+    <Testimonials/>
+    <HomeReferrals/>
     </div>
   )
 };

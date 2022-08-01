@@ -50,7 +50,7 @@ const Testimonials = () => {
       >
           {sliderContents.map((sliderContents, index) => (
 
-            <SwiperSlide>
+            <SwiperSlide key={index}>
 
             <div className="swiper">
               <div className="swiper-wraper">
@@ -75,6 +75,15 @@ const Testimonials = () => {
           ))}
       </Swiper>
       </>
+
+      {/* <Route path="/*" component={
+            <main className="app__bg-main">
+              
+              <h1>404</h1>
+              <p>There's nothing here!</p>
+                <button type='button' className='button'><a href="/">Go Back to Home</a></button>
+            </main>}
+          /> */}
     </div>
   )
 }

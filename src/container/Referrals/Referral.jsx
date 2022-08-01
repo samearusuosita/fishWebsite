@@ -37,7 +37,7 @@ const howItWoksCards = [
         key="test"
         >
 
-          <>
+          <div className='ref-info'>
             <img src={images.queensfield_m} alt="" className='img-ref'/>
               <div className="app__orders-text">
                 <Orderslist 
@@ -48,10 +48,13 @@ const howItWoksCards = [
                   sent directly to your registered account at the end of the week."
                 />
               </div>
-          </>
+          </div>
         </motion.div>  
  
         </div>
+
+
+        
         <div className="howItWoks-section">
           <div className="service-cont">
             <h1 className='howItWork-headtext'>How it Works </h1>
