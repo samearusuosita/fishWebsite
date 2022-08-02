@@ -23,12 +23,11 @@ root.render(
   <Navbar/>
   <BrowserRouter>
       <Routes>
-      
-        <Route path='/' element={<App/>} />
-        <Route path='/About' element={<About/>} />
-        <Route path='/Referral' element={<Referral/>} />
-        <Route path='/Contact' element={<Contact/>} />
-        <Route path='*' element={
+        <Route exact path='/' element={<App/>} />
+        <Route exact path='/About' element={<About/>} />
+        <Route exact path='/Referral' element={<Referral/>} />
+        <Route exact path='/Contact' element={<Contact/>} />
+        <Route exact path='*' element={
         <div className="app__homereferrals app__flex" id='app__fish-bg'>
         <div className="app__homeref-content">
           <h1 className="home-ref-headteat">Opps <br/>There is nothing here</h1>
