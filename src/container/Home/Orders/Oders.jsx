@@ -6,7 +6,8 @@ import OrderBtn from '../../../components/Buttons/OrderBtn';
 
 import { motion } from 'framer-motion';
 
-import './Orders.scss'
+import './Orders.scss';
+
 
 const Oders = () => {
 
@@ -15,6 +16,9 @@ const Oders = () => {
       <>
        <h1 className='title-text'>Order tasty & mouthwatering <br/>carefully selected fish</h1>
        <h5 className="title-text-sub">For the best meal experience</h5>
+       <div>
+    </div>
+
       </>
 
       <motion.div

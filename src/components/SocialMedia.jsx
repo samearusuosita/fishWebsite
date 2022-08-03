@@ -12,13 +12,13 @@ const SocialMedia = () => {
     <div className='app__social'>
       
       <div>
-        <a href="www.facebook.com/queensfields"><FaFacebookF/></a>
+        <a className="App-link" href="https://facebook.com/queensfields" target="_blank" rel="noopener noreferrer"><FaFacebookF/></a>
       </div>
       <div>
-        <a href="www.instagram.com/queensfields"><BsInstagram/></a>
+        <a className="App-link" href="https://instagram.com/queensfields" target="_blank" rel="noopener noreferrer"><BsInstagram/></a>
       </div>
       <div>
-        <a href="www.twitter.com/queensfields"><BsTwitter/></a>
+        <a className="App-link" href="https://twitter.com/queensfields" target="_blank" rel="noopener noreferrer"><BsTwitter/></a>
       </div>
     </div>
   )

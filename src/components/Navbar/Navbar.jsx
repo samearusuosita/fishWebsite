@@ -7,6 +7,7 @@ import {motion} from 'framer-motion';
 
 import {BsTwitter, BsInstagram} from "react-icons/bs";
 import {FaFacebookF} from "react-icons/fa";
+import { Link } from 'react-router-dom'
 
 
 const Navbar = () => {
@@ -21,16 +22,17 @@ const Navbar = () => {
     if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80)
   {
     document.getElementById("navbar").style.padding = "0.5rem 5rem 1rem";
-    document.getElementById("navbar").style.background = "white";
+    document.getElementById("navbar").style.background = "green";
     document.getElementById("nav-a").style.color = "green";
     document.getElementById("nav-a1").style.color = "green";
     document.getElementById("nav-a2").style.color = "green";
     document.getElementById("nav-a3").style.color = "green";
+    
 
     document.getElementById("logo").style.hieght = "25px";
 
-    document.getElementById("logo").style.display = "none";
-    document.getElementById("logo2").style.display = "";
+    // document.getElementById("logo").style.display = "none";
+    document.getElementById("logo").style.display = "";
     document.getElementById("logo2").style.opacity = "1";
     
    
@@ -64,10 +66,12 @@ const Navbar = () => {
           <img src={images.queensfield_logo2} alt="logo2" id="logo2"/>
         </div>
         <ul className='app__navbar-links' id='app__navbar-links'>
-          <li><a id='nav-a' href="/">Home</a></li>
-          <li><a id='nav-a1' href="/about">About</a></li>
-          <li><a id='nav-a2' href="/referral">Referrals</a></li>
-          <li><a id='nav-a3' href="/contact">Contact</a></li>
+
+          <li id='nav-a'><Link to='/'>Home</Link></li>
+          <li id='nav-a1'><Link to='/about'>About</Link></li>
+          <li id='nav-a2'><Link to='/referral'>Referral</Link></li>
+          <li id='nav-a3'><Link to='/contact'>Contact</Link></li>
+          <Link to="/does-not-exist"></Link>
         </ul>
 
         <div className="app__navbar-menu">
@@ -88,9 +92,9 @@ const Navbar = () => {
           </ul>
           
           <ul className="social-icons-nav">
-                  <li><a href="/facebook.com"><FaFacebookF/></a></li>
-                  <li><a href="/instagram.com"><BsInstagram/></a></li>
-                  <li><a href="/twitter.com"><BsTwitter/></a></li>
+                  <li><a href="https://facebook.com/queensfields" target="_blank" rel="noopener noreferrer"><FaFacebookF/></a></li>
+                  <li><a href="https://instagram.com/queensfields" target="_blank" rel="noopener noreferrer"><BsInstagram/></a></li>
+                  <li><a href="https://twitter.com/queensfields"target="_blank" rel="noopener noreferrer"><BsTwitter/></a></li>
                 </ul>
           </motion.div>
           )}
