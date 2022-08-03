@@ -1,6 +1,5 @@
 import React from 'react';
 import './App.scss';
-// import {Header, Orders, HomeReferrals, Testimonials, Dilivery} from '../src/container/Home';
 import ButtonPrimary from './components/Buttons/Button_primary';
 
 
