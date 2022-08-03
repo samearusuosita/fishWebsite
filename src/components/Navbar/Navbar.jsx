@@ -43,6 +43,7 @@ const Navbar = () => {
   } else {
     document.getElementById("navbar").style.padding = "0.2rem 2rem 0.8rem";
     document.getElementById("navbar").style.background = "rgba(0, 0, 0, 0.301)";
+    document.getElementById("navbar").style.position = "fixed";
     document.getElementById("nav-a").style.color = "white";
     document.getElementById("nav-a1").style.color = "white";
     document.getElementById("nav-a2").style.color = "white";
