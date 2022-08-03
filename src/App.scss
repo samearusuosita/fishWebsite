@@ -137,15 +137,6 @@
   width: 100%;
   
 
-  svg{
-    color: white;
-    cursor: pointer;
-
-    &:hover{
-      color: green;
-      transform: scale(2);
-    }
-  }
 
  
  div {
@@ -267,8 +258,12 @@
       padding: 0 10px;
 
       @media screen and(max-width: 850px ){
-          min-width: 100%;
+          width: 100%;
       }
+      @media screen and(max-width: 450px ){
+          width: 100%;
+      }
+      
 
 
       .order-headtext{
@@ -325,6 +320,7 @@
   }
   
   @media screen and(max-width: 650px ){
+    flex-direction: column;
       .reverse{
       flex-direction: row;
   }

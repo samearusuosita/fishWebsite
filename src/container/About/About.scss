@@ -1,5 +1,7 @@
-.app__about{
+.app__about-main{
   width: 100%;
+  
+  overflow: hidden;
   background-image: url(../../assets/bg_main.png);
 
     .app__about-bgH{
@@ -17,11 +19,17 @@
         @media screen and(max-width: 1180px) {
           height: 30vh;          
         }
+
+        .app__animate-item{
+          padding-bottom: 100px;
+          padding-top: 100px;
+        }
       }
 
       .app__about-content{
         padding-top: 70px;
-        overflow: hidden;
+        // overflow: hidden;
+        min-width: 100%;
       
 
         .app__orders{
@@ -34,24 +42,26 @@
               flex-direction: column;
             }
             
+            
           }
-
           img{
             transform: none;
           }
           
+          
           @media screen and (min-width: 1180px) {
             padding-bottom: 100px;
-          }
 
-
-          @media screen and (min-width: 1180px){
             .app__orders-text{
               padding: 0 0px 0 100px
             }
-            
           }
+
+
+          
         }
+
+        
 
       }
 }
@@ -60,5 +70,13 @@
 .content-center{
   background: linear-gradient((green)0%, (black)100%);
   background-attachment: fixed;
+}
+
+.app__about-mainCont{
+  @media screen and(max-width: 450px) {
+    padding-left: 10px;
+    padding-right: 10px;
+    
+  }
 }
 

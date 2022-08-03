@@ -34,7 +34,7 @@ const howItWoksCards = [
         whileHover={{scale: 1.1}}
         transition={{duration: 0.5, type: "tween"}}
         className="app__animate-item"
-        key="test"
+        key="ref-motion"
         >
 
           <div className='ref-info'>

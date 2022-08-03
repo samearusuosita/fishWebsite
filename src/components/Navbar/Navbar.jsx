@@ -34,7 +34,7 @@ const Navbar = () => {
 
     // document.getElementById("logo").style.display = "none";
     document.getElementById("logo").style.display = "";
-    document.getElementById("logo2").style.opacity = "1";
+    // document.getElementById("logo2").style.opacity = "1";
     
    
     
@@ -53,7 +53,7 @@ const Navbar = () => {
     
 
     document.getElementById("logo").style.display = "";
-    document.getElementById("logo2").style.display = "none";
+    // document.getElementById("logo2").style.display = "none";
   }}
 
 
