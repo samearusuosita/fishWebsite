@@ -23,7 +23,7 @@ import posting from '../assets/posting.png';
 import queensfield_m from '../assets/queensfield_m.jpg';
 import lets_talk from '../assets/lets_talk.jpg';
 import whoweare from '../assets/whoweare.jpg';
-import deliveryMan from '../assets/deliveryMan.jpg';
+import deliveryMan from '../assets/deliveryMan.png';
 import chidalu from '../assets/chidalu.jpg';
 import ijeoma from '../assets/ijeoma.jpg';
 import mnsignature from '../assets/mnsignature.jpg';
