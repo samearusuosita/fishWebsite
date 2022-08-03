@@ -86,10 +86,11 @@ const Navbar = () => {
             >
           <MdOutlineRestaurantMenu font size={27} onClick={() => setToggle(false)}/>
           <ul className='app__navbar-links'>
-            <li><a href="/">Home</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="/referral">Referrals</a></li>
-            <li><a href="/contact">Contact</a></li>
+          <li id='nav-a'><Link to='/'>Home</Link></li>
+          <li id='nav-a1'><Link to='/about'>About</Link></li>
+          <li id='nav-a2'><Link to='/referral'>Referral</Link></li>
+          <li id='nav-a3'><Link to='/contact'>Contact</Link></li>
+          <Link to="/does-not-exist"></Link>
             
           </ul>
           
