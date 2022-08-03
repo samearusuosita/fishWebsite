@@ -23,6 +23,7 @@ const Navbar = () => {
   {
     document.getElementById("navbar").style.padding = "0.5rem 5rem 1rem";
     document.getElementById("navbar").style.background = "green";
+    document.getElementById("navbar").style.position = "fixed";
     document.getElementById("nav-a").style.color = "green";
     document.getElementById("nav-a1").style.color = "green";
     document.getElementById("nav-a2").style.color = "green";
