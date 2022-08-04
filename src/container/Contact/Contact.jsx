@@ -98,7 +98,7 @@ const Contact = () => {
               <div className="contact info">
                 <h3 className='contact-side-bars'>Address</h3>
                 <ul>
-                  <li><MdLocationOn/><a href="/google.com">153 Ademola Adetokumbo <br/>Wuse 2, Abuja, Nigeria</a></li>
+                  <li><MdLocationOn/><a href="https://goo.gl/maps/SbZBfe4CDeC2qSLd8">153 Ademola Adetokumbo <br/>Wuse 2, Abuja, Nigeria</a></li>
                   <li className='p-text'><FaPhoneVolume/><a href="tel:+2348103116234">08103116234</a></li>
                   <li className='p-text'><MdEmail/><a href="mailto:sales@myqueensfield.com">sales@myqueensfield.com</a></li>
                 </ul>

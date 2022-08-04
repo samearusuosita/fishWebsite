@@ -110,8 +110,6 @@
 
             @media screen and(max-width: 450px) {
                 margin: 10px;
-              
-                
             }
 
             .card1{
@@ -119,7 +117,7 @@
                 box-shadow: 0 5px 35px rgba(0, 104, 40, 0.10);
                 width: 100%;
                 margin: 20px;
-                border-radius: 10px 10px 10px 10px;
+                border-radius: 6px;
 
                 @media screen and(max-width: 1180px) {
                     margin: 50px;
@@ -129,6 +127,7 @@
                 @media screen and(max-width: 450px) {
                     margin-bottom: 20px;
                     padding: 10px;
+                    border-radius: 3px;
                   
                     
                 }
