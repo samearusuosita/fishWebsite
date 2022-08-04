@@ -26,7 +26,6 @@
   background-repeat: repeat;
 }
 
-
 .title-text{
   color: black;
   font-size: 40px;
@@ -75,9 +74,7 @@
           font-size: 16px;
    
           }
-      
   }
-
 
   button{
     display: block;
@@ -109,8 +106,6 @@
         text-decoration: none;
       }
 
-    
-
     @media screen and(max-width: 1180px ){
        width: 100%;
        height: 60px;
@@ -124,9 +119,7 @@
        font-size: 16px;
       
       }
-    
 }
-
 
 .app__social {
   justify-content: space-evenly;
@@ -134,9 +127,6 @@
   display: flex;
   flex-direction: row;
   width: 100%;
-  
-
-
  
  div {
     width: 30px;
@@ -177,7 +167,6 @@
   }
 }
 
-
 .app__order-content{
   width: 1280px;
   max-width: 95%;
@@ -187,7 +176,6 @@
   align-items: center;
   justify-content: space-around;
 }
-
 
 .href-mobile{
     
@@ -215,8 +203,6 @@
       border-radius: 6px;
       overflow: hidden;
   }
-  
-  
 
   @media screen and(max-width: 1180px ){
           height: auto;
@@ -238,8 +224,6 @@
       @media screen and(max-width: 450px ){
         border-radius: 3px;
     }
-
-      
 
       &:hover{
           transform: scale(1.8);
@@ -266,9 +250,7 @@
       @media screen and(max-width: 450px ){
           width: 100%;
       }
-      
-
-
+  
       .order-headtext{
           color: black;
           font-size: 34px;
@@ -306,18 +288,9 @@
             }
           @media screen and(max-width: 540px ){
               font-size: 16px;
-            }
-
-            
+            }  
       }
-
-      
   }
-
-
-
-  
-
 
   @media screen and(max-width: 850px ){
       .reverse{
@@ -373,8 +346,4 @@
 
 a{
   text-decoration: none;
-
-//   &:hover{
-//     color: rgb(197, 255, 197);
-// }
 }
