@@ -26,7 +26,7 @@ const Oders = () => {
         whileHover={{scale: 1.1}}
         transition={{duration: 0.5, type: "tween"}}
         className="app__animate-item"
-        key="test"
+        key="orderMotion"
         >
           <div className='app__orders'>     
         <div className="app__order-content">
@@ -52,7 +52,7 @@ const Oders = () => {
         whileHover={{scale: 1.1}}
         transition={{duration: 0.5, type: "tween"}}
         className="app__animate-item"
-        key="test"
+        key="OrderMotion2"
         >
 
         <div className='app__orders'>
@@ -80,7 +80,7 @@ const Oders = () => {
         whileHover={{scale: 1.1}}
         transition={{duration: 0.5, type: "tween"}}
         className="app__animate-item"
-        key="test"
+        key="OrderMotion3"
         >
 
         <div className='app__orders'>

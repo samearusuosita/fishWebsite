@@ -8,7 +8,7 @@ import { images } from '../../constants';
 import ButtonPrimary from '../../components/Buttons/Button_primary';
 
 import { motion } from 'framer-motion';
-
+import { Link } from 'react-router-dom';
 
 
 const Referral = () => {
@@ -75,7 +75,7 @@ const howItWoksCards = [
             </div>
           </div>
           <div className="btn-ref">
-          <ButtonPrimary href="/contact" order_btn="Joing the Program"/>
+          <Link to="/contact"><ButtonPrimary order_btn="Joing the Program"/></Link>
         </div>
         </div>
       </div>

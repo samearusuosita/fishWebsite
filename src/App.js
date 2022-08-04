@@ -2,8 +2,6 @@ import React from 'react';
 import './App.scss';
 import ButtonPrimary from './components/Buttons/Button_primary';
 
-
-
 import {Route, Routes} from 'react-router-dom'
 
 import {About, Contact, Referral} from './container';
@@ -14,6 +12,7 @@ import { Footer, Navbar } from './components';
 const App = () => {
 
   function PageNotFound () {
+    
     return (
       <div className="app__homereferrals app__flex" id='app__fish-bg'>
               <div className="app__homeref-content">

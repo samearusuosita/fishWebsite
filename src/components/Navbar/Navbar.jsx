@@ -84,7 +84,7 @@ const Navbar = () => {
             whileInView={{x: [300, 0]}}
             transition={{duration: 0.85, ease: 'easeOut' }}
             >
-          <MdOutlineRestaurantMenu font size={27} onClick={() => setToggle(false)}/>
+          <MdOutlineRestaurantMenu onClick={() => setToggle(false)}/>
           <ul className='app__navbar-links'>
           <li id='nav-a'><Link to='/'>Home</Link></li>
           <li id='nav-a1'><Link to='/about'>About</Link></li>

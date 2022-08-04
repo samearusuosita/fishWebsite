@@ -1,2 +1,2 @@
-// export {default as AppWrap} from './AppWrap'
+// export {default as ScrollToTop} from './ScrollToTop'
 export {default as MotionWrap} from './MotionWrap'
