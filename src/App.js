@@ -18,9 +18,9 @@ const App = () => {
       <div className="app__homereferrals app__flex" id='app__fish-bg'>
               <div className="app__homeref-content">
                 <h1 className="home-ref-headteat">Opps <br/>There is nothing here</h1>
-                <p className='home-ref-pteat'>it's possible the page you are looking for does not exist</p>
+                <p className='home-ref-pteat'>It's possible the page you are looking for does not exist</p>
               </div>
-                <ButtonPrimary href="/" order_btn="Go to Home page" />
+                <ButtonPrimary href="/" order_btn="Go to Home page"/>
             </div>
     )
   }
