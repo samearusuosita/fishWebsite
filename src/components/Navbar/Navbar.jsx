@@ -7,7 +7,7 @@ import {motion} from 'framer-motion';
 
 import {BsTwitter, BsInstagram} from "react-icons/bs";
 import {FaFacebookF} from "react-icons/fa";
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 
 
 const Navbar = () => {
