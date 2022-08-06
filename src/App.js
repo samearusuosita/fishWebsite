@@ -1,4 +1,5 @@
 import React from 'react';
+
 import './App.scss';
 import ButtonPrimary from './components/Buttons/Button_primary';
 
@@ -7,6 +8,9 @@ import {Route, Routes} from 'react-router-dom'
 import {About, Contact, Referral} from './container';
 import Home from "./container/Home/Home"
 import { Footer, Navbar } from './components';
+
+import ScrollToTop from "react-scroll-to-top";
+
 
 
 const App = () => {
@@ -38,6 +42,7 @@ const App = () => {
       </Route>
       
     </Routes>
+    <ScrollToTop color="green"/>
     <Footer/>
   </div>
   )

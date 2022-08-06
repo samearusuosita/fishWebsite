@@ -32,7 +32,8 @@ import clarissa from '../assets/clarissa.jpg';
 
 
 
-export default {bg_head, 
+export default {
+    bg_head, 
     queensfield_logo2, 
     queensfield_logo, 
     mangala,

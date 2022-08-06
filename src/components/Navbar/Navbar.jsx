@@ -9,7 +9,6 @@ import {BsTwitter, BsInstagram} from "react-icons/bs";
 import {FaFacebookF} from "react-icons/fa";
 import { Link } from 'react-router-dom';
 
-
 const Navbar = () => {
 
   const [toggle, setToggle] = useState(false);
@@ -56,7 +55,14 @@ const Navbar = () => {
     // document.getElementById("logo2").style.display = "none";
   }}
 
-
+ 
+  // const menuItems = [
+    
+  //   {items: "Home", LinkUrl: <Link to={`${Home}`}>Home</Link>},
+  //   {items: "About", LinkUrl: <Link to='/about'>About</Link>},
+  //   {items: "Referral", LinkUrl: <Link to='/referral'>Referral</Link>},
+  //   {items: "Contact", LinkUrl: <Link to='/contact'>Contact</Link>}
+  // ]
 
 
 
@@ -82,18 +88,26 @@ const Navbar = () => {
           {toggle && (
             <motion.div 
             whileInView={{x: [300, 0]}}
-            transition={{duration: 0.85, ease: 'easeOut' }}
+            transition={{duration: 0.65, ease: 'easeOut' }}
             >
           <MdOutlineRestaurantMenu onClick={() => setToggle(false)}/>
-          <ul className='app__navbar-links'>
-          <li id='nav-a'><Link to='/'>Home</Link></li>
+          <ul className='app__navbar-links' onClick={() => setToggle(false)}>
+          <li id='nav-a' ><Link to='/'>Home</Link></li>
           <li id='nav-a1'><Link to='/about'>About</Link></li>
           <li id='nav-a2'><Link to='/referral'>Referral</Link></li>
           <li id='nav-a3'><Link to='/contact'>Contact</Link></li>
           <Link to="/does-not-exist"></Link>
-            
           </ul>
-          
+
+          {/* <ul>
+            {menuItems.map((menuItems, index) => (
+              <li key={index} onClick={() => setToggle(false)}>
+                <a href={menuItems.LinkUrl}>{menuItems.items}</a>
+              </li>
+            ))}
+          </ul> */}
+
+
           <ul className="social-icons-nav">
                   <li><a href="https://facebook.com/queensfields" target="_blank" rel="noopener noreferrer"><FaFacebookF/></a></li>
                   <li><a href="https://instagram.com/queensfields" target="_blank" rel="noopener noreferrer"><BsInstagram/></a></li>

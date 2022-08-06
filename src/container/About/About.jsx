@@ -5,7 +5,6 @@ import HeadingSection from '../../components/Heading/headingSection';
 import Orderslist from '../../components/Orders_list/Orders_list';
 
 import { images } from '../../constants';
-import ButtonPrimary from '../../components/Buttons/Button_primary';
 
 import { motion } from 'framer-motion';
 import { Testimonials} from '../Home';

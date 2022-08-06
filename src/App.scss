@@ -2,7 +2,25 @@
 .App {
   text-align: center;
   min-width: 100%;
+  
+  
 }
+
+.scroll-to-top{
+  background-color: transparent !important;
+  box-shadow: none !important;
+  width: 25px !important;
+  height: 25px !important;
+ 
+  &:hover{
+    border-radius: 0px none !important;
+    border: none !important;
+    color: white !important;
+    width: 40px !important;
+    height: 40px !important;
+  }
+}
+
 
 .app__container {
   width: 100%;
@@ -347,3 +365,4 @@
 a{
   text-decoration: none;
 }
+
