@@ -73,7 +73,7 @@
         }
 
         &:active{
-            color: green;
+            color: rgb(6, 255, 102);
             -webkit-background-clip: text;
             background-clip: text;
         }
@@ -83,6 +83,7 @@
         display: none;
         
     }
+
 }
 
 .app__navbar-menu{

@@ -7,7 +7,7 @@ import {motion} from 'framer-motion';
 
 import {BsTwitter, BsInstagram} from "react-icons/bs";
 import {FaFacebookF} from "react-icons/fa";
-import { Link } from 'react-router-dom';
+import { Link, NavLink} from 'react-router-dom';
 
 const Navbar = () => {
 
@@ -75,7 +75,8 @@ const Navbar = () => {
         </div>
         <ul className='app__navbar-links' id='app__navbar-links'>
 
-          <li id='nav-a'><Link to='/'>Home</Link></li>
+          {/* <li id='nav-a'><Link to='/'>Home</Link></li> */}
+          <NavLink exact={true} activeClassName='is-active' to='/'>Home</NavLink>
           <li id='nav-a1'><Link to='/about'>About</Link></li>
           <li id='nav-a2'><Link to='/referral'>Referral</Link></li>
           <li id='nav-a3'><Link to='/contact'>Contact</Link></li>

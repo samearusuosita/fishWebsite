@@ -32,7 +32,7 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_dgo6h0h', 'template_hyvg6da', form.current, 'Gv3ek3VoD7N2IEviR')
+    emailjs.sendForm('service_wnvayki', 'template_xlwbzqg', form.current, 'wtCXuou7mqY_ff1Ce')
       .then((result) => {
           form.current.reset();
           alert('Thank you for getting in touch!') 
