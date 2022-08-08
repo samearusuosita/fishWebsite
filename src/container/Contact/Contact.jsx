@@ -1,4 +1,4 @@
-import React, {useRef } from 'react';
+import React, {useRef, useEffect } from 'react';
 import emailjs from '@emailjs/browser';
 
 import './Contact.scss'
@@ -19,6 +19,10 @@ import {MotionWrap} from '../../wrapper';
 
 
 const Contact = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
 
 
   // Submitting contact form

@@ -1,12 +1,12 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 
 import './App.scss';
 import ButtonPrimary from './components/Buttons/Button_primary';
 
-import {Route, Routes} from 'react-router-dom'
+import {Route, Routes} from 'react-router-dom';
 
 import {About, Contact, Referral} from './container';
-import Home from "./container/Home/Home"
+import Home from "./container/Home/Home";
 import { Footer, Navbar } from './components';
 
 import ScrollToTop from "react-scroll-to-top";
@@ -14,6 +14,11 @@ import ScrollToTop from "react-scroll-to-top";
 
 
 const App = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
 
   function PageNotFound () {
     
@@ -32,7 +37,7 @@ const App = () => {
     <Navbar/>
     <Routes>
       <Route >
-          <Route exact index path="/" element={<Home />} />
+          <Route exact path="/" element={<Home />} />
           <Route exact path="/about" element={<About />} />
           <Route exact path="/Referral" element={<Referral />} />
           <Route exact path="/contact" element={<Contact />} />

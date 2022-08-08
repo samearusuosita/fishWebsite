@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import './About.scss';
 
 import HeadingSection from '../../components/Heading/headingSection';
@@ -12,7 +12,9 @@ import { Testimonials} from '../Home';
 
 const About = () => {
 
-
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
 
 
   return (

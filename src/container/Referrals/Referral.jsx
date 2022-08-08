@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 
 import './Referral.scss'
 import HeadingSection from '../../components/Heading/headingSection';
@@ -12,6 +12,10 @@ import { Link } from 'react-router-dom';
 
 
 const Referral = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
 
 const howItWoksCards = [
   {imgurl: images.chatting, title: "Join", description: "Get started by clicking the join botton and become part of queensfield referral program.The process takes less than a menute."},
